@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv = "refresh" content = "4;url={{ redirect }}" />
+
+        <meta property="og:title" content="{{ title }}" />
+        <meta property="og:description" content="{{ description }}" />
+
+        <meta property="og:image" content="{{ image }}" />
+        {% if thumbnail %}
+        <meta name="twitter:card" content="summary_large_image">
+        {% endif %}
+
+        <meta name="theme-color" content="{{ color }}">
+    </head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        body {
+            background-color: #2F3136;
+            overflow-x: hidden;
+        }
+
+        .head {
+            background-color: #2F3136;
+            width: 100%;
+            height: 100vh;
+        }
+
+        @media screen and (max-width: 700px) {
+            .head {
+                height: 100vh;
+            }
+            #particles-js {
+                height: 500px;
+            }
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .middle-center {
+            top: 25%;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner-textarea {
+            text-align: center;
+            padding-top: 90px;
+        }
+
+        .banner-title {
+            font-size: 40px;
+            color: #fff;
+            font-weight: 300;
+        }
+    </style>
+</head>
+</html>
